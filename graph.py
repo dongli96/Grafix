@@ -29,7 +29,7 @@ class Graph(object):
         return self.graph_.get_adj_matrix()
 
     @property
-    def edgeset_array(self) -> List[List[int, int, int]]:
+    def edgeset_array(self) -> List[List[int]]:
         edgeset_array_ = []
         edgeset_array = self.graph_.get_edgeset_array()
         vertex_list = self.vertex_list
