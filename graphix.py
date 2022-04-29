@@ -33,6 +33,7 @@ class Graph(object):
         edgeset_array_ = []
         edgeset_array = self.graph_.get_edgeset_array()
         vertex_list = self.vertex_list
+        
         for edge in edgeset_array:
             edgeset_array_.append([vertex_list[edge[0]], vertex_list[edge[1]], edge[2]])
         return edgeset_array_
