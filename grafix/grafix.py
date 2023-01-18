@@ -1,14 +1,14 @@
 import graphviz
 from typing import *
 
-import graph
+import cgrafix
 
 
 class Graph(object):
     
     def __init__(self, *args, **kw):
         if "graph_obj" not in kw:
-            self.graph_ = graph.Graph(*args, **kw)
+            self.graph_ = cgrafix.Graph(*args, **kw)
         else:
             self.graph_ = kw["graph_obj"]
 
